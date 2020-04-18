@@ -1,4 +1,4 @@
-package br.edu.up.atividadePhelipe.Config;
+package br.edu.up.atividadePhelipe.config;
 
 import java.io.IOException;
 import java.io.Serializable;

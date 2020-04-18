@@ -1,4 +1,4 @@
-package br.edu.up.atividadePhelipe.Controller;
+package br.edu.up.atividadePhelipe.controller;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.edu.up.atividadePhelipe.Config.JwtTokenUtil;
-import br.edu.up.atividadePhelipe.Service.JwtUserDetailsService;
+import br.edu.up.atividadePhelipe.service.JwtUserDetailsService;
+import br.edu.up.atividadePhelipe.config.JwtTokenUtil;
 import br.edu.up.atividadePhelipe.entity.JwtRequest;
 import br.edu.up.atividadePhelipe.entity.JwtResponse;
 

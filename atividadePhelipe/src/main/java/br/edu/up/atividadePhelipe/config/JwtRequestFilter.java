@@ -1,4 +1,4 @@
-package br.edu.up.atividadePhelipe.Config;
+package br.edu.up.atividadePhelipe.config;
 
 import java.io.IOException;
 
@@ -15,7 +15,7 @@ import org.springframework.security.web.authentication.WebAuthenticationDetailsS
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import br.edu.up.atividadePhelipe.Service.JwtUserDetailsService;
+import br.edu.up.atividadePhelipe.service.JwtUserDetailsService;
 import io.jsonwebtoken.ExpiredJwtException;
 
 @Component

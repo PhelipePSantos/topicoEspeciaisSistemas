@@ -1,4 +1,4 @@
-package br.edu.up.atividadePhelipe.Controller;
+package br.edu.up.atividadePhelipe.controller;
 
 import javax.validation.Valid;
 
@@ -25,7 +25,7 @@ public class ProprietarioController {
 		Iterable<Proprietario> list = repository.findAll();
 		return list;
 	}
-	@GetMapping("/{id}")
+	@GetMapping("/id={id}")
 	public @ResponseBody Proprietario getById(@PathVariable Integer Id) {
 		Proprietario proprietario = repository.getOne(Id);
 		return proprietario;
@@ -39,6 +39,12 @@ public class ProprietarioController {
 	public Proprietario delete(@PathVariable Integer id) {
 		Proprietario proprietario = repository.getOne(id);
 		repository.delete(proprietario);
+		return proprietario;
+	}
+
+	@GetMapping("/nome={nome}")
+	public Proprietario GetProprietarioByNome(@PathVariable String nome) {
+		Proprietario proprietario= repository.getProprietarioByNome(nome);
 		return proprietario;
 	}
 }

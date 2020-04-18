@@ -1,4 +1,4 @@
-package br.edu.up.atividadePhelipe.Config;
+package br.edu.up.atividadePhelipe.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

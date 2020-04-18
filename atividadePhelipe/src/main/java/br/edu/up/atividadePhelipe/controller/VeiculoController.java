@@ -1,4 +1,4 @@
-package br.edu.up.atividadePhelipe.Controller;
+package br.edu.up.atividadePhelipe.controller;
 
 import javax.validation.Valid;
 
@@ -39,6 +39,11 @@ public class VeiculoController {
 	public Veiculo delete(@PathVariable Integer id) {
 		Veiculo veiculo = repository.getOne(id);
 		repository.delete(veiculo);
+		return veiculo;
+	}
+	@GetMapping("/cor={cor}")
+	public @ResponseBody Iterable<Veiculo> getAllByCor(@PathVariable String cor) {
+		Iterable<Veiculo> veiculo = repository.getAllByCor(cor);
 		return veiculo;
 	}
 }

@@ -1,4 +1,4 @@
-package br.edu.up.atividadePhelipe.Service;
+package br.edu.up.atividadePhelipe.service;
 
 import java.util.ArrayList;
 
